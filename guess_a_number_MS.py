@@ -11,16 +11,21 @@ while solved == False :
 			eingabe = int(raw_input("Please insert an integer between 0 and 100:"))
 			break
 		except:
-			print('Oops, this was not a number')
+			print('Oops, this was not a number!')
 	if eingabe > 100:
-		print ('Your number is too high')
+		print ('Your number is bigger than 100!')
 	elif eingabe < 0:
-		print ('Your number is too low')
+		print ('Your number is smaller than 0')
 	else:
 		counter = counter + 1
 		if (eingabe == correct):
 			print 'Yippie, you won! You tried {} times'.format(counter)
-			solved = True
+			eing2= str(raw_input("Do you want to play again? Please enter y or n:"))
+			if (eing2 == 'y'):
+				counter = 0
+				correct = randint(0,100)
+			else:
+				solved = True
 		elif (eingabe < correct):
 			print ('Sorry, your number was too low')
 		else:
