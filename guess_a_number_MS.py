@@ -6,7 +6,12 @@ solved = False            #Loesung gefunden oder nicht
 print "Hello, let's play a game!"
 
 while solved == False :
-	eingabe = int(raw_input("Please insert an integer between 0 and 100:"))
+	while True:
+		try:
+			eingabe = int(raw_input("Please insert an integer between 0 and 100:"))
+			break
+		except:
+			print('Oops, this was not a number')
 	if eingabe > 100:
 		print ('Your number is too high')
 	elif eingabe < 0:
