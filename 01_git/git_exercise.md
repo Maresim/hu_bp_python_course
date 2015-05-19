@@ -8,7 +8,7 @@ HU Berlin
     0. *(optional)* Create a Github account and fork this repository
     1. clone this repository to your local folder
 
-2. Go to the `01_introduction/` directory and create a new file in which you can save your notes. Let's call it `notes.md` and save something in it. If you use markdown syntax like:
+2. Go to the `01_git/` directory and create a new file in which you can save your notes. Let's call it `notes.md` and save something in it. If you use markdown syntax like:
   ```
   # Title
   ## Subtitle
